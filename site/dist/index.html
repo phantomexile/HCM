@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e7">
+  <meta name="description"
+    content="Phòng giải mã lịch sử tư tưởng Hồ Chí Minh. Ôn tập qua 4 chặng, 16 thử thách, lời giải và tư liệu tham khảo dành cho sinh viên.">
+  <title>Phòng giải mã · Lịch sử tư tưởng Hồ Chí Minh</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238f302b'/%3E%3Cpath d='M16 18h14l2 4 2-4h14v30H34l-2 4-2-4H16z' fill='none' stroke='%23f5f1e7' stroke-width='3'/%3E%3Cpath d='M32 23v23' stroke='%23f5f1e7' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./quest.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Đi đến nội dung</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Phòng giải mã — Trang chủ">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>PHÒNG GIẢI MÃ<small>LỊCH SỬ TƯ TƯỞNG HỒ CHÍ MINH</small></span>
+      </a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#home" data-nav="home">Hành trình</a>
+        <a href="#study" data-nav="study">Sổ tay ôn tập</a>
+        <a href="#guide" data-nav="guide">Cách chơi</a>
+      </nav>
+    </div>
+  </header>
+  <div id="notice" class="notice" role="status" hidden></div>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><span>PHÒNG GIẢI MÃ <span class="footer-dot">/</span> Học lịch sử, hiểu tư tưởng.</span><a
+      href="#sources">Nguồn tham khảo ↗</a></footer>
+  <dialog id="restart-dialog" aria-labelledby="restart-title">
+    <form method="dialog">
+      <span class="eyebrow">MỘT KHỞI ĐẦU MỚI</span>
+      <h2 id="restart-title">Bắt đầu lại hành trình?</h2>
+      <p>Điểm và câu trả lời của lượt đang chơi sẽ được đặt lại. Kỷ lục của bạn vẫn được giữ.</p>
+      <div class="dialog-actions"><button value="cancel" class="button secondary" autofocus>Giữ lượt hiện
+          tại</button><button value="restart" class="button primary">Bắt đầu lại</button></div>
+    </form>
+  </dialog>
+  <noscript>
+    <p class="notice">Vui lòng bật JavaScript trong trình duyệt để chơi và lưu tiến độ.</p>
+  </noscript>
+</body>
+
+</html>
